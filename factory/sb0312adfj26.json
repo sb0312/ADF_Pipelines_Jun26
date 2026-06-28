@@ -1,0 +1,15 @@
+{
+	"name": "sb0312adfj26",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "89d95472-3dad-4c59-a11f-33f3884890a8",
+		"tenantId": "1349308b-ef81-43c1-8c3b-44cbb83d04a0"
+	}
+}

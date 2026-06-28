@@ -1,0 +1,17 @@
+{
+	"name": "ls_rest_sql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "sohan-server.database.windows.net",
+			"database": "sohandb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sohan0312",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQENGMjBCOEYyLTk4QTUtNEU3OC04Q0EzLTZBMEE0RTMwNkI5NF8yMWE2MDUxMC05ZDlmLTQyYmMtOTNlZi0xMmMwNjBlMWI3OTIiDQp9"
+		}
+	}
+}

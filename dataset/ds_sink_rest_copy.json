@@ -1,0 +1,45 @@
+{
+	"name": "ds_sink_rest_copy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sink_la",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "users.csv",
+				"container": "sink"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "lastname",
+				"type": "String"
+			},
+			{
+				"name": "firstname",
+				"type": "String"
+			},
+			{
+				"name": "middlename",
+				"type": "String"
+			},
+			{
+				"name": "suffix",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
