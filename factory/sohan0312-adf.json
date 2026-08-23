@@ -1,0 +1,15 @@
+{
+	"name": "sohan0312-adf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b02439bc-8040-465b-92de-367a9652fe23",
+		"tenantId": "ef84b6f2-7870-4c73-bb89-3acaece4e2a1"
+	}
+}

@@ -2,11 +2,11 @@
 	"name": "DelimitedText2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage2",
+			"referenceName": "ls_source_gmd",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"Filename": {
+			"filename2": {
 				"type": "string"
 			}
 		},
@@ -14,40 +14,19 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
+				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().Filename",
+					"value": "@dataset().filename2",
 					"type": "Expression"
 				},
-				"container": "sink"
+				"fileSystem": "sink"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "id",
-				"type": "String"
-			},
-			{
-				"name": "lastname",
-				"type": "String"
-			},
-			{
-				"name": "firstname",
-				"type": "String"
-			},
-			{
-				"name": "middlename",
-				"type": "String"
-			},
-			{
-				"name": "suffix",
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
