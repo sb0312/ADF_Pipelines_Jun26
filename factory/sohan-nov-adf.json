@@ -1,0 +1,16 @@
+{
+	"name": "sohan-nov-adf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "447f7032-8b26-43ee-8520-6f50729c922b",
+		"tenantId": "20a26aec-a0a5-49e9-871d-cd1c88a471f5"
+	}
+}
